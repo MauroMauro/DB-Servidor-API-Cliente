@@ -1,7 +1,16 @@
 const customersRouter = require('express').Router()
 const sql = require('mssql')
-const config = require('../utils/config')
+require('dotenv').config()
 
+const config = {
+	user: process.env.USER,
+	password: process.env.PASS,
+	server: process.env.DB_SERVER,
+	database: process.env.DATABASE,
+	options: {
+	  trustServerCertificate: true
+	}
+}
 
 
 const obtenerTodos = async () => {

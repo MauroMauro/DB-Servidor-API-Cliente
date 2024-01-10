@@ -4,9 +4,17 @@
   "description": "servidor",
   "main": "index.js",
   "scripts": {
-	"start": "node index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "MG Benitez",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mssql": "^10.0.1",
+    "nodemon": "^3.0.2",
+    "tedious": "^16.6.1"
+  }
 }
